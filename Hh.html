@@ -1,44 +1,143 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Judul Web / Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Blog Klasik Versi Beda</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6e3; /* krem klasik */
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background-color: #800000; /* merah marun */
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      border-bottom: 4px solid #444;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    header marquee {
+      font-size: 14px;
+      margin-top: 5px;
+      color: #ffe6e6;
+    }
+
+    /* Navigasi */
+    nav {
+      background-color: #e0e0e0;
+      padding: 8px;
+      text-align: center;
+      border-bottom: 2px solid #bbb;
+    }
+    nav a {
+      background: #d9b38c;
+      padding: 8px 15px;
+      margin: 0 5px;
+      text-decoration: none;
+      color: black;
+      border: 1px solid #996633;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    nav a:hover {
+      background: #996633;
+      color: white;
+    }
+
+    /* Konten */
+    section {
+      padding: 20px;
+      margin: 15px auto;
+      width: 90%;
+      max-width: 800px;
+      background: white;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      font-size: 18px;
+      color: #800000;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    section p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Galeri */
+    .gallery {
+      margin-top: 10px;
+    }
+    .gallery img {
+      width: 140px;
+      height: 100px;
+      margin: 5px;
+      border: 2px solid #555;
+      background: #eee;
+    }
+
+    /* Footer */
+    footer {
+      background: #800000;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 13px;
+      border-top: 4px solid #444;
+    }
+  </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <h1>JUDUL WEB / BLOG</h1>
+    <marquee>Selamat datang di blog klasik bergaya lama</marquee>
+  </header>
 
-<table border="1" width="80%" align="center" cellspacing="0" cellpadding="10">
-    <!-- Judul dengan tulisan berjalan -->
-    <tr>
-        <td align="center">
-            <h2>JUDUL WEB / BLOG</h2>
-            <marquee behavior="scroll" direction="left">Tulisan Berjalan</marquee>
-        </td>
-    </tr>
+  <!-- Menu -->
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#profil">Profil</a>
+    <a href="#galeri">Galeri</a>
+  </nav>
 
-    <!-- Menu Navigasi -->
-    <tr>
-        <td align="center">
-            <a href="#">Beranda</a> | 
-            <a href="#">Profil</a> | 
-            <a href="#">Galeri</a>
-        </td>
-    </tr>
+  <!-- Beranda -->
+  <section id="beranda">
+    <h2>Beranda</h2>
+    <p>Berisi tentang deskripsi dan berbagai macam produk dari sebuah web/blog.</p>
+  </section>
 
-    <!-- Konten -->
-    <tr>
-        <td height="300">
-            <p><b>Beranda</b> berisi tentang deskripsi dan berbagai macam produk dari sebuah web/blog.</p>
-            <p><b>Profil</b> berisi biodata pembuat blog / web.</p>
-        </td>
-    </tr>
+  <!-- Profil -->
+  <section id="profil">
+    <h2>Profil</h2>
+    <p>Berisi biodata pembuat blog/web.</p>
+  </section>
 
-    <!-- Footer -->
-    <tr>
-        <td align="center">
-            copyright@nama_anda2025
-        </td>
-    </tr>
-</table>
+  <!-- Galeri -->
+  <section id="galeri">
+    <h2>Galeri</h2>
+    <p>Menampilkan beberapa foto dan deskripsinya:</p>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/140x100" alt="Foto 1">
+      <img src="https://via.placeholder.com/140x100" alt="Foto 2">
+      <img src="https://via.placeholder.com/140x100" alt="Foto 3">
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    copyright@nama_anda2025
+  </footer>
 </body>
 </html>
